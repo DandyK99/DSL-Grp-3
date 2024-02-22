@@ -7,3 +7,4 @@ Challenges encountered:
 
 Lessons Learnt:
 1. computer must be better :)
+2. Test bench not possible because the hz is too high -> cannot generate the clock long enough to trigger the counter
