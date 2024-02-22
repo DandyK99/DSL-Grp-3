@@ -1,7 +1,9 @@
 Design:
-
+1. 100mhz clock to get a clock input -> 1hz count -> implement it into a 4bit 
 
 Challenges encountered:
-
+1. Syntax Error
+2. Understanding the code to isolatae the 7 segment display and the clock counter
 
 Lessons Learnt:
+1. computer must be better :)
