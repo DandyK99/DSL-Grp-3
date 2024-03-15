@@ -17,3 +17,7 @@ Challenges in Verilog Traffic Light Controller Design
     4. Hardware Implementation:
           Mapping to actual hardware.
           Interfacing with displays.
+
+Lessons Learnt:
+1. Implementing Functions that uses buttons must be used with a clock to filter noise and get a proper input signal to properly function
+2. Hardware needs to be not only mapped but also calculate the power drawn in order for LED to function properly
