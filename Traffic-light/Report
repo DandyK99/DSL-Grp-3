@@ -1,3 +1,7 @@
+Design:
+1. Using 100Hz clock input, design a traffic light algorithm that countsdown from 30 seconds and switches the lights according to a set time. 
+2. Implemant an adder function to simulate exrending the crossing time for seniors.
+
 Challenges in Verilog Traffic Light Controller Design
     1.State Management:
           Handling different light states (red, yellow, green).
