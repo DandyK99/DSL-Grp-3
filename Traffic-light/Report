@@ -1,0 +1,15 @@
+Challenges in Verilog Traffic Light Controller Design
+    1.State Management:
+          Handling different light states (red, yellow, green).
+          Ensuring smooth transitions and synchronization.
+    2. Precise Timing:
+      Accurate delays for state changes.
+          Considering clock cycles and propagation.
+          Synchronization Across Intersections:
+      Optimizing traffic flow.
+    3. Simulation and Verification:
+          Debugging state transitions and timing.
+          Ensuring correctness.
+    4. Hardware Implementation:
+          Mapping to actual hardware.
+          Interfacing with displays.
