@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+BCD Number:     0
+Test failed! Incorrect BCD number output.
+$finish called at time : 530 ns : File "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v" Line 59

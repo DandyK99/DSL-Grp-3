@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Mar 15 12:12:18 2024
-# Process ID: 26056
+# Start of session at: Fri Mar 15 12:00:13 2024
+# Process ID: 55364
 # Current directory: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent50156 C:\Users\ZhangHaotian\Documents\GitHub\DSL-Grp-3\Traffic-light\traffic_light\traffic_light.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40388 C:\Users\ZhangHaotian\Documents\GitHub\DSL-Grp-3\Traffic-light\traffic_light\traffic_light.xpr
 # Log file: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/vivado.log
 # Journal file: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light\vivado.jou
 # Running On: ThinkBook14Plus, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 29734 MB
@@ -14,9 +14,10 @@
 start_gui
 open_project C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.xpr
 update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
 launch_simulation
 source stopwatch_tb.tcl
-save_wave_config {C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg
-set_property xsim.view C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg [get_filesets sim_1]
 close_sim

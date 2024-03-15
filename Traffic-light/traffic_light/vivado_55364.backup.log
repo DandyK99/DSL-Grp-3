@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Mar 15 12:12:18 2024
-# Process ID: 26056
+# Start of session at: Fri Mar 15 12:00:13 2024
+# Process ID: 55364
 # Current directory: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent50156 C:\Users\ZhangHaotian\Documents\GitHub\DSL-Grp-3\Traffic-light\traffic_light\traffic_light.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40388 C:\Users\ZhangHaotian\Documents\GitHub\DSL-Grp-3\Traffic-light\traffic_light\traffic_light.xpr
 # Log file: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/vivado.log
 # Journal file: C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light\vivado.jou
 # Running On: ThinkBook14Plus, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 29734 MB
@@ -93,14 +93,61 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/ZhangHaotian/Desktop/traffic_light' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1531.047 ; gain = 281.402
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1511.617 ; gain = 237.227
 update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'stopwatch_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'stopwatch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stopwatch_tb_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sources_1/new/stopwatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stopwatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stopwatch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stopwatch_tb_behav xil_defaultlib.stopwatch_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stopwatch_tb_behav xil_defaultlib.stopwatch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:56]
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:69]
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:82]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1539.098 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'stopwatch_tb'
@@ -129,9 +176,56 @@ Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:56]
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:69]
+ERROR: [VRFC 10-2989] 'assert' is not declared [C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v:82]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'stopwatch_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'stopwatch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj stopwatch_tb_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sources_1/new/stopwatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stopwatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stopwatch_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stopwatch_tb_behav xil_defaultlib.stopwatch_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot stopwatch_tb_behav xil_defaultlib.stopwatch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.stopwatch
+Compiling module xil_defaultlib.stopwatch_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot stopwatch_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -154,11 +248,8 @@ Test failed! Incorrect BCD number output.
 $finish called at time : 530 ns : File "C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/traffic_light.srcs/sim_1/new/stopwatch_tb.v" Line 59
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'stopwatch_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1565.125 ; gain = 34.078
-save_wave_config {C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg
-set_property xsim.view C:/Users/ZhangHaotian/Documents/GitHub/DSL-Grp-3/Traffic-light/traffic_light/stopwatch_tb_behav.wcfg [get_filesets sim_1]
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1563.973 ; gain = 24.875
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 12:19:10 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 15 12:12:08 2024...

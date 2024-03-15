@@ -51,9 +51,13 @@ module stopwatch_tb;
         // Wait for the stopwatch to count
         #400;
 
-        // Assertion: Verify the BCD numbers are correctly updated
+        // Check BCD number output
         $display("BCD Number: %d", bcd_num);
-        assert(bcd_num == 16'b0011_0010_0000_0000) // Expected: 5200
+        // Expected: 5200
+        if (bcd_num !== 16'b0011_0010_0000_0000) begin
+            $display("Test failed! Incorrect BCD number output.");
+            $finish;
+        end
 
         // Add more time
         #100;
@@ -64,9 +68,13 @@ module stopwatch_tb;
         // Wait for the stopwatch to count
         #400;
 
-        // Assertion: Verify the BCD numbers are correctly updated
+        // Check BCD number output
         $display("BCD Number: %d", bcd_num);
-        assert(bcd_num == 16'b0011_1000_0000_0000) // Expected: 8000
+        // Expected: 8000
+        if (bcd_num !== 16'b0011_1000_0000_0000) begin
+            $display("Test failed! Incorrect BCD number output.");
+            $finish;
+        end
 
         // Add more time than allowed
         #100;
@@ -77,12 +85,17 @@ module stopwatch_tb;
         // Wait for the stopwatch to count
         #400;
 
-        // Assertion: Verify the BCD numbers are correctly updated
+        // Check BCD number output
         $display("BCD Number: %d", bcd_num);
-        assert(bcd_num == 16'b0011_1000_0000_0000) // Expected: 8000 (No change)
+        // Expected: 8000 (No change)
+        if (bcd_num !== 16'b0011_1000_0000_0000) begin
+            $display("Test failed! Incorrect BCD number output.");
+            $finish;
+        end
 
         // Finish simulation
         #100;
+        $display("All tests passed successfully!");
         $finish;
     end
 
