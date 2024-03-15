@@ -1,0 +1,313 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 464.668 ; gain = 185.805
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 53532
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1300.262 ; gain = 441.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_tree' [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/clock_tree.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'clock_tree' (0#1) [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/clock_tree.v:17]
+WARNING: [Synth 8-7071] port 'CLK25Hz' of module 'clock_tree' is unconnected for instance 'clk_tree_u0' [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/top_module.v:51]
+WARNING: [Synth 8-7023] instance 'clk_tree_u0' of module 'clock_tree' has 5 connections declared, but only 4 given [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/top_module.v:51]
+INFO: [Synth 8-6157] synthesizing module 'stopwatch' [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/stopwatch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch' (0#1) [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/stopwatch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Segment' [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/segment.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Segment' (0#1) [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/segment.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/top_module.v:23]
+WARNING: [Synth 8-3848] Net CLK25Hz in module/entity clock_tree does not have driver. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/sources_1/new/clock_tree.v:22]
+WARNING: [Synth 8-7129] Port CLK25Hz in module clock_tree is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1406.496 ; gain = 548.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1406.496 ; gain = 548.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1406.496 ; gain = 548.176
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1406.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pio17'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio18'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio19'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio20'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio21'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio22'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio23'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio26'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio27'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio28'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio29'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio30'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio31'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio32'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio33'. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.srcs/constrs_1/new/constrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1496.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1496.586 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'an_r_reg' in module 'Segment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                             0000
+*
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0100
+                  iSTATE |                              100 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_r_reg' using encoding 'sequential' in module 'Segment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     9|
+|4     |LUT2   |    28|
+|5     |LUT3   |    18|
+|6     |LUT4   |    10|
+|7     |LUT5   |    20|
+|8     |LUT6   |    32|
+|9     |FDCE   |    40|
+|10    |FDPE   |     4|
+|11    |FDRE   |     1|
+|12    |IBUF   |     3|
+|13    |OBUF   |    17|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:34 . Memory (MB): peak = 1496.586 ; gain = 548.176
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1496.586 ; gain = 638.266
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1496.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: 69c5e4f8
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 20 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1496.586 ; gain = 1028.969
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1496.586 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ZhangHaotian/Desktop/traffic_light/traffic_light.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 14 20:31:32 2024...
