@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr  8 13:26:45 2024
+# Process ID: 8048
+# Current directory: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6396 C:\Users\ZhangHaotian\OneDrive - Singapore University of Technology and Design\Courses\Term6\Digital System Lab\2D\2DPRNG\2DPRNG.xpr
+# Log file: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/vivado.log
+# Journal file: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG\vivado.jou
+# Running On: B450, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 12, Host memory: 34268 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/p0_cmoda7_UART_Demo/p0_cmoda7_UART_Demo.srcs/sim_1/new/clock_div_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/p0_cmoda7_UART_Demo/p0_cmoda7_UART_Demo.srcs/sim_1/new/clock_div_tb.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/p0_cmoda7_UART_Demo/p0_cmoda7_UART_Demo.srcs/sim_1/new/uart_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/p0_cmoda7_UART_Demo/p0_cmoda7_UART_Demo.srcs/sim_1/new/uart_tb.v}}

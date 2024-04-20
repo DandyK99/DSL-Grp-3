@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v,1710750616,verilog,,C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/clock_div.v,,xadc_wiz_0,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sim_1/new/prng_tb.v,1713596194,verilog,,,,prng_tb,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/imports/2D/CMODA7_Demo_UART_TX_Verilog-master/p3_cmoda7_uart2pc_demo.srcs/sources_1/new/uart_tx.v,1711618008,verilog,,C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/topmodule.v,,uart_tx,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/imports/2D/PRNG/PRNG.srcs/sources_1/new/prng.v,1713594831,verilog,,C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sim_1/new/prng_tb.v,,prng,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/clock_div.v,1710489970,verilog,,C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/drv_segment.v,,clock_div,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/drv_segment.v,1710734760,verilog,,C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/imports/2D/PRNG/PRNG.srcs/sources_1/new/prng.v,,drv_segment,,,,,,,,
+C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.srcs/sources_1/new/topmodule.v,1712565601,verilog,,,,top_module,,,,,,,,

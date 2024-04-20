@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Apr 20 14:41:26 2024
+# Process ID: 26472
+# Current directory: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.runs/impl_1
+# Command line: vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.runs/impl_1/top_module.vdi
+# Journal file: C:/Users/ZhangHaotian/OneDrive - Singapore University of Technology and Design/Courses/Term6/Digital System Lab/2D/2DPRNG/2DPRNG.runs/impl_1\vivado.jou
+# Running On: B450, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 12, Host memory: 34268 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
